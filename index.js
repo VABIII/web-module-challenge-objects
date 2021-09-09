@@ -103,7 +103,6 @@ function addReview(arr, name, rating, feedback) {
   arr.push({name, rating, feedback });
   return arr;
 }
-
 console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -117,9 +116,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
-}
+function getReviewByIndex(arr, index) {
+      return `${arr[index].name} gave the restaurant a ${arr[index].rating} star review, and their feedback was: ${arr[index].feedback}`;
+  
+  }
 
 
   
@@ -136,8 +136,8 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(arr) {
+  return `${arr[arr.length -1].name} gave the restaurant a ${arr[arr.length -1].rating} star review, and their feedback was: ${arr[arr.length -1].feedback}`
 } 
 
 
